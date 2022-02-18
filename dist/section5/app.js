@@ -74,17 +74,14 @@
 // hoge = new AccountingDepartment('1', []);
 // hoge.mostResentReport = 'aaaa';
 // hoge.mostResentReport;
-// PersonクラスにGreetableインターフェースを実装する
+// outputNameプロパティを持っていなくてもエラーにならない
 class Person {
     constructor(n) {
-        this.name = n;
-    }
-    greet(phrase) {
-        console.log(phrase + ' ' + this.name);
+        if (n) {
+            this.name = n;
+        }
     }
 }
-// 変数にinterfaceを型として指定することができる
-let user1;
-// 変数に値を格納する場合はオブジェクトである必要がある
-user1 = new Person('takumi');
-user1.greed('hello');
+let person;
+person = new Person();
+console.log(person);

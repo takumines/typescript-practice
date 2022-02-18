@@ -18,12 +18,12 @@
 
 // レストパラメータ
 // 引数に受け取った数値を全て足して返す関数
-const add = (...numbers: number[]) => {
-    return numbers.reduce((curResult, curValue) => {
-        return curResult + curValue;
-    }, 0);
-}
-const addedNumbers = add(5, 10, 3.7);
-console.log(addedNumbers);
-console.log('ttest');
+// const add = (...numbers: number[]) => {
+//     return numbers.reduce((curResult, curValue) => {
+//         return curResult + curValue;
+//     }, 0);
+// }
+// const addedNumbers = add(5, 10, 3.7);
+// console.log(addedNumbers);
+// console.log('ttest');
 
