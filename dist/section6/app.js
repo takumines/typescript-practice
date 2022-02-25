@@ -42,6 +42,12 @@
 //     privileges: ['test'],
 //     startDate: new Date(),
 // }
+// type Combinable = string | number;
+// type Numeric = number | boolean;
+//
+// // Universalはnumber型になる。
+// type Universal = Combinable & Numeric;
+// const u: Universal = 1;
 // 型ガード
 // type Combinable = string | number;
 // function add(a: Combinable, b: Combinable) {
@@ -148,13 +154,14 @@
 //     email: '正しいメールアドレスではありません。',
 //     username: 'ユーザー名が正しくありません。'
 // }
+// console.log(errorBag.email)
 // 関数オーバーロード
 // type Combinable = string | number;
 //
-// function add(a: number, b: number): number;
-// function add(a: string, b: string): string
-// function add(a: number, b: string): string
-// function add(a: string, b: number): string
+// // function add(a: number, b: number): number;
+// // function add(a: string, b: string): string
+// // function add(a: number, b: string): string
+// // function add(a: string, b: number): string
 // function add(a: Combinable, b: Combinable) {
 //     if (typeof a === 'string' || typeof b === 'string') {
 //         return a.toString() + b.toString();
