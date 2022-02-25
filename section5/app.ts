@@ -175,24 +175,24 @@
 // }
 
 // 任意のパラメータ＆プロパティ
-interface Named {
-    readonly name?: string;
-    // プロパティ名の後ろに?をつけることでプロパティを持っているかは任意になる
-    outputName?: string;
-}
-
-// outputNameプロパティを持っていなくてもエラーにならない
-class Person implements Named {
-    name?: string;
-
-    constructor(n?: string) {
-        if (n) {
-            this.name = n
-        }
-    }
-}
-
-let person: Named;
-
-person = new Person();
-console.log(person);
+// interface Named {
+//     readonly name?: string;
+//     // プロパティ名の後ろに?をつけることでプロパティを持っているかは任意になる
+//     outputName?: string;
+// }
+//
+// // outputNameプロパティを持っていなくてもエラーにならない
+// class Person implements Named {
+//     name?: string;
+//
+//     constructor(n?: string) {
+//         if (n) {
+//             this.name = n
+//         }
+//     }
+// }
+//
+// let person: Named;
+//
+// person = new Person();
+// console.log(person);
